@@ -32,7 +32,7 @@ body {
 
 .site-content {
   display: flex;
-  min-height: 300svh;
+  min-height: 400svh;
   flex-direction: column;
 }
 
@@ -176,6 +176,21 @@ body.cookie-shake #starfield {
 .game-section {
   width: min(100% - 64px, 1280px);
   margin: clamp(2.5rem, 6vh, 5rem) auto 5rem;
+}
+
+.development-section {
+  width: min(100% - 64px, 1280px);
+  margin: 100svh auto 0;
+  padding: 56px 0 48px;
+  color: #69778e;
+  text-align: center;
+}
+
+.development-section p {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  letter-spacing: clamp(0.08em, 0.5vw, 0.14em);
+  line-height: 1.6;
 }
 
 .game-heading {
@@ -325,6 +340,10 @@ body.cookie-shake #starfield {
   }
 
   .game-section {
+    width: calc(100% - 32px);
+  }
+
+  .development-section {
     width: calc(100% - 32px);
   }
 
