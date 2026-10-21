@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The personal website of Anthony Scanlon." />
+    <meta name="theme-color" content="#000000" />
+    <title>anthony scanlon.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <audio id="background-music" autoplay loop preload="auto">
+      <source src="assets/leave-the-past-behind.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="site-content">
+      <header class="site-header">
+        <h1 aria-label="anthony scanlon.">
+          <span id="typed-name" aria-hidden="true"></span><span
+            class="typing-cursor"
+            aria-hidden="true"
+          ></span>
+        </h1>
+        <div class="header-divider" aria-hidden="true"></div>
+      </header>
+      <main class="content-area">
+        <section class="game-section" aria-labelledby="game-title">
+          <div class="game-heading">
+            <img src="assets/beatupcancer-enemy.png" alt="" aria-hidden="true" />
+            <h2 id="game-title">BEAT UP CANCER</h2>
+          </div>
+
+          <div class="project-layout">
+            <div
+              class="project-gallery"
+              id="project-gallery"
+              role="group"
+              aria-label="Beat Up Cancer screenshots"
+            >
+              <figure class="gallery-slide is-active">
+                <img
+                  src="assets/beatupcancer-menu.png"
+                  alt="Beat Up Cancer's colorful title screen and game menu"
+                />
+              </figure>
+              <figure class="gallery-slide">
+                <img
+                  src="assets/beatupcancer-gameplay.png"
+                  alt="Gameplay showing a hero fighting cancer-themed enemies"
+                />
+              </figure>
+              <figure class="gallery-slide">
+                <img
+                  src="assets/beatupcancer-action.png"
+                  alt="A character launching a fire attack during a fight"
+                />
+              </figure>
+              <figure class="gallery-slide">
+                <img
+                  src="assets/beatupcancer-city.png"
+                  alt="Pixel-art city backdrop from the game"
+                />
+              </figure>
+              <figure class="gallery-slide gallery-slide-contain">
+                <img
+                  src="assets/beatupcancer-logo-stars.png"
+                  alt="Beat Up Cancer illustrated game logo against a starry background"
+                />
+              </figure>
+              <figure class="gallery-slide gallery-slide-contain">
+                <img
+                  src="assets/beatupcancer-logo.png"
+                  alt="Close-up of the Beat Up Cancer game logo"
+                />
+              </figure>
+              <figure class="gallery-slide gallery-slide-contain">
+                <img
+                  src="assets/beatupcancer-enemy.png"
+                  alt="Pixel-art skull enemy"
+                />
+              </figure>
+            </div>
+
+            <div class="project-details">
+              <p class="project-caption">
+                <strong>BEAT UP CANCER</strong> is a fast-paced 2D arcade-fighting
+                game built in <strong>Unity</strong> as a collaborative Senior
+                Capstone Project for Seattle Pacific University. Engineered by
+                Radioactive Studios, the project features responsive state-machine
+                controls and an optimized <strong>WebGL architecture</strong> for
+                seamless, zero-install browser gameplay.
+              </p>
+              <a
+                class="game-launch-button"
+                href="https://wanguijohn.itch.io/beatupcancer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PLAY FREE ON ITCH.IO <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <p>this is the bottom of anthony scanlon's website, you have earned a cookie:</p>
+        <button
+          class="cookie-button"
+          id="cookie-button"
+          type="button"
+          aria-label="Eat the cookie"
+          aria-controls="cookie-chomp"
+        >
+          <img src="assets/cookie.png" alt="" />
+        </button>
+        <audio id="cookie-chomp" preload="auto">
+          <source src="assets/cookie-chomp.mp3" type="audio/mpeg" />
+        </audio>
+      </footer>
+    </div>
+  </body>
+</html>
